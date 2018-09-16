@@ -9,13 +9,13 @@ public class TwoSumProblem {
     public int[] twoSum(int[] nums, int target){
        
         System.out.println("check");
-        Map<Integer, Integer> finalMap = new HashMap<>();
-        Map<Integer, Integer> map = new HashMap<>();
-        for (int i = 0; i < nums.length; i++) {
+        Map<Integer, Integer> finalMap = new HashMap<>(); // O(1)
+        Map<Integer, Integer> map = new HashMap<>(); // O(1)
+        for (int i = 0; i < nums.length; i++) {   // O(n)
             map.put(nums[i], i);
         }
         
-        for(int key : map.keySet()) {
+        for(int key : map.keySet()) {   // O(n)
             int compliment = target - key;
             if (map.containsKey(compliment) && !finalMap.containsKey(map.get(compliment)) ) {
                 finalMap.put(map.get(key), map.get(compliment));
@@ -25,5 +25,5 @@ public class TwoSumProblem {
         
        return null;
     }
-    
+    // Complexity is O(n)
 }
