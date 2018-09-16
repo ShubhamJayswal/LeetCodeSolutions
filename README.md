@@ -5,4 +5,4 @@ still learning to program in Java. This repository would come in handy for someo
 but also want to get an indepth understanding of problem solving techniques. Every problem is new and it's rather a nice way to prepare 
 oneself for competetive programming and coding interview problems.
 
-#The good thing is that you could also contribute to this repository to add in novice solutions for Leetcode Solutions. 
+# The good thing is that you could also contribute to this repository to add in novice solutions for Leetcode Solutions. 
