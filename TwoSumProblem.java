@@ -16,10 +16,10 @@ public class TwoSumProblem {
         }
         
         for(int key : map.keySet()) {   // O(n)
-            int compliment = target - key;
-            if (map.containsKey(compliment) && !finalMap.containsKey(map.get(compliment)) ) {
-                finalMap.put(map.get(key), map.get(compliment));
-                return new int[] { map.get(key), map.get(compliment) };
+            int complement = target - key;
+            if (map.containsKey(complement) && !finalMap.containsKey(map.get(complement)) ) {
+                finalMap.put(map.get(key), map.get(complement));
+                return new int[] { map.get(key), map.get(complement) };
             }
         }
         
